@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+
+<struts>
+<package name="default" extends = "struts-default">
+
+<action name = "Search" class = "g.action"  method = "SearchA">
+<result>qresult.jsp</result>
+</action>
+
+<action name = "Searchall" class = "g.action"  method = "SearchB">
+<result>qresult.jsp</result>
+</action>
+
+<action name = "enter" class = "g.action">
+<result>index.jsp</result>
+</action>
+
+<action name = "ADD" class = "g.action" method = "ADDin">
+<result name = "input">insert.jsp</result>
+<result>index.jsp</result>
+</action>
+
+<action name = "ADD_A" class = "g.action"  method = "ADDAu">
+<result>index.jsp</result>
+</action>
+
+<action name = "Del" class = "g.action" method = "Delis">
+<result>index.jsp</result>
+</action>
+
+<action name = "UpBook" class = "g.action"  method = "UpBook">
+<result name = "input">insert.jsp</result>
+<result>index.jsp</result>
+</action>
+
+<action name = "FindBook" class = "g.action" method = "FindBook">
+<result>update.jsp</result>
+</action>
+
+<action name = "QISBN" class = "g.action" method = "SISBN">
+<result>information.jsp</result>
+</action>
+
+</package> 
+</struts>
